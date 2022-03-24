@@ -3,13 +3,13 @@ import { Image, Pressable } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
 interface IProps {
-    iconName: object;
-    width: number;
-    onPress?: () => void;
-    disabled?: boolean;
-  }
+  iconName: object;
+  width: number;
+  onPress?: () => void;
+  disabled?: boolean;
+}
 
-const IconBtn: FC<IProps> = ({iconName, width, onPress, disabled}) => {
+const IconBtn: FC<IProps> = ({ iconName, width, onPress, disabled }) => {
   return (
     <Pressable onPress={onPress} disabled={disabled}>
       <Image

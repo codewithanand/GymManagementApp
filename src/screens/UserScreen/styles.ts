@@ -9,29 +9,29 @@ const createStyles = () =>
       backgroundColor: Colors.WHITE,
       paddingTop: RFValue(30),
     },
-    navbar: {
-      height: RFValue(64),
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
-      backgroundColor: Colors.PRIMARY,
-      color: Colors.WHITE,
-      paddingLeft: RFValue(20),
-      paddingTop: RFValue(20),
-      paddingRight: RFValue(20),
-      paddingBottom: RFValue(20),
-    },
+
     scrollView: {
       marginBottom: RFValue(64),
+      
     },
-    bottomNav: {
-      flex: 1,
-      position: "absolute",
-      bottom: 0,
-      borderTopColor: Colors.GREY,
-      borderTopWidth: RFValue(2),
-      height: RFValue(64),
-      width: "100%",
+    header:{
+      paddingTop: RFValue(20),
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingBottom: RFValue(20),
+    },
+    gymName: {
+      fontSize: RFValue(24),
+      fontWeight: '500',
+    },
+    gymOwner: {
+      fontSize: RFValue(18),
+    },
+    gymContact: {
+      fontSize: RFValue(16),
+    },
+    gymEmail: {
+      fontSize: RFValue(14),
     },
   });
 

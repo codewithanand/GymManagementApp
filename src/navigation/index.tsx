@@ -16,7 +16,7 @@ export default function Screens() {
   return (
     <NavigationContainer>
       <MainStack.Navigator
-      initialRouteName="UserScreen"
+      initialRouteName="IntialScreen"
         screenOptions={{ headerShown: false, }}
       >
           <MainStack.Screen name="IntialScreen" component={IntialScreen} />

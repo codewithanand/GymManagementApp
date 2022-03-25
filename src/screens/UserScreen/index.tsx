@@ -51,7 +51,7 @@ const UserScreen: FC<IProps> = ({ navigation }) => {
         <ListBtn iconName={PRIVACY_ICON} btnName="Privacy Policy" />
       </ScrollView>
 
-      <BottomNavigation />
+      <BottomNavigation navigationLoc = {navigation} />
     </View>
   );
 };

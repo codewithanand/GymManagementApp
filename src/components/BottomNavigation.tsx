@@ -1,4 +1,5 @@
-import { useMemo } from "react";
+import { NavigationProp, ParamListBase } from "@react-navigation/native";
+import { FC, useMemo } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 import {
@@ -11,15 +12,19 @@ import {
 import { Colors } from "../constants/color";
 import IconBtn from "./IconBtn";
 
-const BottomNavigation = () => {
+interface IProps{
+  navigationLoc: NavigationProp<ParamListBase>
+}
+
+const BottomNavigation: FC<IProps> = ({navigationLoc}) => {
   const styles = useMemo(() => createStyles(), []);
   return (
     <View style={styles.bottomNav}>
-      <IconBtn iconName={PEOPLE_ICON} disabled={false} width={RFValue(28)} />
-      <IconBtn iconName={GRID_ICON} disabled={false} width={RFValue(24)} />
-      <IconBtn iconName={HOME_ICON} disabled={false} width={RFValue(30)} />
-      <IconBtn iconName={DOLLAR_ICON} disabled={false} width={RFValue(24)} />
-      <IconBtn iconName={INFO_ICON} disabled={false} width={RFValue(24)} />
+      <IconBtn iconName={PEOPLE_ICON} disabled={false} width={RFValue(28)} onPress={() => {navigationLoc.navigate('MembersScreen')}} />
+      <IconBtn iconName={GRID_ICON} disabled={false} width={RFValue(24)} onPress={() => {navigationLoc.navigate('DashboardScreen')}} />
+      <IconBtn iconName={HOME_ICON} disabled={false} width={RFValue(30)} onPress={() => {navigationLoc.navigate('UserScreen')}} />
+      <IconBtn iconName={DOLLAR_ICON} disabled={false} width={RFValue(24)} onPress={() => {navigationLoc.navigate('CollectionScreen')}} />
+      <IconBtn iconName={INFO_ICON} disabled={false} width={RFValue(24)} onPress={() => {navigationLoc.navigate('EnquiryScreen')}} />
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import { Pressable, ScrollView, Text, View } from "react-native";
+import {ScrollView, Text, View } from "react-native";
 import React, { FC, useMemo } from "react";
 import createStyles from "./styles";
 import { NavigationProp, ParamListBase } from "@react-navigation/native";
@@ -6,9 +6,11 @@ import TopNavigation from "../../components/TopNavigation";
 import BottomNavigation from "../../components/BottomNavigation";
 import ProfilePicture from "../../components/ProfilePicture";
 import {
+  BELL_ICON,
   GET_APP_ICON,
   GRID_ICON,
   HELP_ICON,
+  MENU_ICON,
   PHONE_ICON,
   PRIVACY_ICON,
   PROFILE_PIC,
@@ -25,9 +27,11 @@ interface IProps {
 const UserScreen: FC<IProps> = ({ navigation }) => {
   const styles = useMemo(() => createStyles(), []);
 
+
+
   return (
     <View style={styles.body}>
-      <TopNavigation />
+      <TopNavigation firstIcon={MENU_ICON} secondIcon={BELL_ICON} navigation={navigation}/>
 
       <ScrollView style={styles.scrollView}>
         <View style={styles.header}>

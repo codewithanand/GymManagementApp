@@ -8,7 +8,6 @@ const createStyles = () =>
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
-      paddingTop: RFValue(30),
     },
     text: {
       fontSize: RFValue(28),

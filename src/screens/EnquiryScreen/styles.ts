@@ -3,11 +3,10 @@ import { RFValue } from "react-native-responsive-fontsize";
 import { Colors } from "../../constants/color";
 
 const createStyles = () => StyleSheet.create({
-    body:{
+    body: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
+        backgroundColor: Colors.WHITE,
+      },
     text:{
         fontSize: RFValue(25),
         fontWeight: '300',

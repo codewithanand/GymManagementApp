@@ -24,7 +24,7 @@ const SignupScreen: FC<IProps> = ({ navigation }) => {
   //   if (MobNo.length === 0 || Password.length === 0) {
   //     alert("Required field is missing");
   //   } else {
-  //     const API_URL = "http://localhost:81/api/insert.php";
+  //     const API_URL = "http://localhost:81/MuscleFitness/insert.php";
 
   //     let header = {
   //       'Accept': "application/json",

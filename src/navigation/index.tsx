@@ -4,10 +4,13 @@ import React from "react";
 import {
   CollectionScreen,
   DashboardScreen,
+  DatabaseScreen,
   EnquiryScreen,
   IntialScreen,
   LoginScreen,
   MembersScreen,
+  NavigationScreen,
+  ScannerScreen,
   SignupScreen,
   UserScreen,
 } from "../screens";
@@ -21,6 +24,9 @@ export type MainStackParamList = {
   DashboardScreen: undefined;
   CollectionScreen: undefined;
   EnquiryScreen: undefined;
+  NavigationScreen: undefined;
+  ScannerScreen: undefined;
+  DatabaseScreen: undefined;
 };
 
 const MainStack = createNativeStackNavigator<MainStackParamList>();
@@ -29,7 +35,7 @@ export default function Screens() {
   return (
     <NavigationContainer>
       <MainStack.Navigator
-        initialRouteName="IntialScreen"
+        initialRouteName="DashboardScreen"
         screenOptions={{ headerShown: false }}
       >
         <MainStack.Screen name="IntialScreen" component={IntialScreen} />
@@ -40,7 +46,9 @@ export default function Screens() {
         <MainStack.Screen name="DashboardScreen" component={DashboardScreen} />
         <MainStack.Screen name="CollectionScreen" component={CollectionScreen} />
         <MainStack.Screen name="EnquiryScreen" component={EnquiryScreen} />
-
+        <MainStack.Screen name="NavigationScreen" component={NavigationScreen} />
+        <MainStack.Screen name="ScannerScreen" component={ScannerScreen} />
+        <MainStack.Screen name="DatabaseScreen" component={DatabaseScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

@@ -1,16 +1,22 @@
-import { useMemo } from "react";
+import { NavigationProp, ParamListBase } from "@react-navigation/native";
+import { FC, useMemo } from "react";
 import { StyleSheet, View } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { BELL_ICON, MENU_ICON } from "../assets";
 import { Colors } from "../constants/color";
 import IconBtn from "./IconBtn";
 
-const TopNavigation = () => {
+interface IProps{
+  firstIcon: object;
+  secondIcon?: any;
+  navigation: NavigationProp<ParamListBase>
+}
+
+const TopNavigation: FC<IProps> = ({firstIcon, secondIcon, navigation}) => {
   const styles = useMemo(() => createStyles(), []);
   return (
     <View style={styles.navbar}>
-      <IconBtn iconName={MENU_ICON} width={24} />
-      <IconBtn iconName={BELL_ICON} width={24} disabled={true} />
+      <IconBtn iconName={firstIcon} width={24} onPress={() => navigation.navigate('NavigationScreen')} />
+      <IconBtn iconName={secondIcon} width={24} />
     </View>
   );
 };
@@ -24,9 +30,9 @@ const createStyles = () => StyleSheet.create({
         backgroundColor: Colors.PRIMARY,
         color: Colors.WHITE,
         paddingLeft: RFValue(20),
-        paddingTop: RFValue(20),
+        paddingTop: RFValue(50),
         paddingRight: RFValue(20),
-        paddingBottom: RFValue(20),
+        paddingBottom: RFValue(30),
       },
 });
 

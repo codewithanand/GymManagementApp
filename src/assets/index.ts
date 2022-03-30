@@ -24,6 +24,13 @@ const QUESTION_ICON = require('./icons/question_48.png');
 const PHONE_ICON = require('./icons/phone_48.png');
 const PRIVACY_ICON = require('./icons/privacy_48.png');
 const HELP_ICON = require('./icons/help_48.png');
+const ADD_PEOPLE_ICON = require('./icons/add_people_48.png');
+const ID_ICON = require('./icons/id_48.png');
+const CALL_ICON = require('./icons/call_48.png');
+const WHATSAPP_ICON = require('./icons/whatsapp_24.png');
+const MESSAGE_ICON = require('./icons/mail_48.png');
+const FINGERPRINT_ICON = require('./icons/fingerprint_48.png');
+const BLOCK_ICON = require('./icons/block_48.png');
 
 export{
     LOGO,
@@ -48,5 +55,12 @@ export{
     QUESTION_ICON,
     PHONE_ICON,
     PRIVACY_ICON,
-    HELP_ICON
+    HELP_ICON,
+    ADD_PEOPLE_ICON,
+    ID_ICON,
+    CALL_ICON,
+    WHATSAPP_ICON,
+    MESSAGE_ICON,
+    FINGERPRINT_ICON,
+    BLOCK_ICON,
 }

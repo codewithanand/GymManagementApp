@@ -6,7 +6,6 @@ const createStyles = () => StyleSheet.create({
     body:{
         width: '100%',
         flex: 1,
-        paddingTop: RFValue(30),
     },
     text:{
         fontSize: RFValue(25),

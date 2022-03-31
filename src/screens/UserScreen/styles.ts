@@ -6,7 +6,7 @@ const createStyles = () =>
   StyleSheet.create({
     body: {
       flex: 1,
-      backgroundColor: Colors.WHITE,
+      backgroundColor: Colors.LIGHT_GREY,
     },
     scrollView: {
       marginBottom: RFValue(64),
@@ -16,6 +16,8 @@ const createStyles = () =>
       alignItems: "center",
       justifyContent: "center",
       paddingBottom: RFValue(20),
+      backgroundColor: Colors.WHITE,
+      marginBottom: RFValue(5),
     },
     gymName: {
       fontSize: RFValue(24),

@@ -8,15 +8,17 @@ import IconBtn from "./IconBtn";
 interface IProps{
   firstIcon: object;
   secondIcon?: any;
-  navigation: NavigationProp<ParamListBase>
+  navigation: NavigationProp<ParamListBase>;
+  firstAction?: () => void;
+  secondAction?: () => void;
 }
 
-const TopNavigation: FC<IProps> = ({firstIcon, secondIcon, navigation}) => {
+const TopNavigation: FC<IProps> = ({firstIcon, secondIcon, navigation, firstAction, secondAction}) => {
   const styles = useMemo(() => createStyles(), []);
   return (
     <View style={styles.navbar}>
-      <IconBtn iconName={firstIcon} width={24} onPress={() => navigation.navigate('NavigationScreen')} />
-      <IconBtn iconName={secondIcon} width={24} />
+      <IconBtn iconName={firstIcon} width={24} onPress={firstAction} />
+      <IconBtn iconName={secondIcon} width={24} onPress={secondAction} />
     </View>
   );
 };

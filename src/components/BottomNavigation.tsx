@@ -44,6 +44,7 @@ const createStyles = () =>
       alignItems: "center",
       paddingLeft: RFValue(20),
       paddingRight: RFValue(20),
+      backgroundColor: Colors.WHITE,
     },
   });
 

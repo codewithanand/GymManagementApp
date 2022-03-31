@@ -9,4 +9,4 @@ export {default as EnquiryScreen} from './EnquiryScreen';
 export {default as NavigationScreen} from './NavigationScreen';
 export {default as ScannerScreen} from './ScannerScreen';
 export {default as DatabaseScreen} from './DatabaseScreen';
-
+export {default as AddMemberScreen} from './AddMemberScreen';

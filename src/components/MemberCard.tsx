@@ -65,7 +65,7 @@ const createStyles = () =>
       justifyContent: "space-between",
       borderLeftWidth: RFValue(20),
       borderLeftColor: Colors.GREY,
-      backgroundColor: Colors.LIGHT_GREY,
+      backgroundColor: Colors.WHITE,
     },
     textHeading: {
       fontSize: RFValue(12),

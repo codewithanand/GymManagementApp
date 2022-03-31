@@ -15,7 +15,7 @@ const CollectionScreen: FC<IProps> = ({navigation}) =>  {
     const styles = useMemo(() => createStyles(), []);
     return (
         <View style={styles.body}>
-            <TopNavigation firstIcon={MENU_ICON} secondIcon={ADD_PEOPLE_ICON} navigation={navigation} />
+            <TopNavigation firstIcon={MENU_ICON} secondIcon={ADD_PEOPLE_ICON} navigation={navigation} firstAction={() => navigation.navigate('NavigationScreen')} />
             <Text style={styles.text}>Collection Screen</Text>
             <BottomNavigation navigationLoc = {navigation} />
         </View>

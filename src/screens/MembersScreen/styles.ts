@@ -15,6 +15,7 @@ const createStyles = () =>
     },
     scrollView: {
       marginBottom: RFValue(64),
+      backgroundColor: Colors.LIGHT_GREY,
     },
     searchBox: {
       backgroundColor: Colors.PRIMARY,

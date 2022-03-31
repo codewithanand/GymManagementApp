@@ -31,7 +31,7 @@ const UserScreen: FC<IProps> = ({ navigation }) => {
 
   return (
     <View style={styles.body}>
-      <TopNavigation firstIcon={MENU_ICON} secondIcon={BELL_ICON} navigation={navigation}/>
+      <TopNavigation firstIcon={MENU_ICON} secondIcon={BELL_ICON} navigation={navigation} firstAction={() => navigation.navigate('NavigationScreen')} />
 
       <ScrollView style={styles.scrollView}>
         <View style={styles.header}>

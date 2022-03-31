@@ -31,6 +31,8 @@ const WHATSAPP_ICON = require('./icons/whatsapp_24.png');
 const MESSAGE_ICON = require('./icons/mail_48.png');
 const FINGERPRINT_ICON = require('./icons/fingerprint_48.png');
 const BLOCK_ICON = require('./icons/block_48.png');
+const BACK_ICON = require('./icons/back_48.png');
+const DONE_ICON = require('./icons/done_48.png');
 
 export{
     LOGO,
@@ -63,4 +65,6 @@ export{
     MESSAGE_ICON,
     FINGERPRINT_ICON,
     BLOCK_ICON,
+    BACK_ICON,
+    DONE_ICON,
 }

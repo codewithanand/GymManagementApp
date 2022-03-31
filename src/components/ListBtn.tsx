@@ -43,11 +43,11 @@ const createStyles = () =>
       borderColor: Colors.LIGHT_GREY,
       borderBottomWidth: RFValue(1),
       borderTopWidth: RFValue(1),
-      marginTop: RFValue(5),
       marginBottom: RFValue(5),
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-between",
+      backgroundColor: Colors.WHITE,
     },
     listNavIcon: {
       flexDirection: "row",

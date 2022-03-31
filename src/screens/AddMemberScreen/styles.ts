@@ -6,37 +6,37 @@ const createStyles = () =>
   StyleSheet.create({
     body: {
       flex: 1,
-      backgroundColor: Colors.WHITE,
+      backgroundColor: Colors.LIGHT_GREY,
     },
     text: {
       fontSize: RFValue(25),
       fontWeight: "300",
       color: Colors.BLACK,
     },
-    scrollView: {
-      marginBottom: RFValue(64),
-      padding: 10,
-      backgroundColor: Colors.LIGHT_GREY,
-
-    },
-    dashboardCard:{
+    section:{
+      marginBottom: RFValue(5),
       backgroundColor: Colors.WHITE,
+      justifyContent: 'center',
+      paddingLeft: 20,
+      paddingRight: 20,
+    },
+    dropdown: {
+      flex: 1,
       marginBottom: 10,
-      padding: 20,
     },
-    heading:{
+    input:{
       fontSize: RFValue(16),
-      fontWeight: '500',
-      paddingTop: 10,
-      paddingBottom: 10,
+      borderBottomColor: Colors.BLACK,
+      borderBottomWidth: 1,
+      marginBottom: 10,
+      padding: 5,
     },
-    dashboardButtons:{
-      borderTopColor: Colors.GREY,
-      borderTopWidth: 1,
-      paddingTop: 10,
-      paddingBottom: 10,
-      fontSize: RFValue(16),
-    },
+    textarea:{
+      borderColor: Colors.GREY,
+      borderWidth: 1,
+      marginBottom: 10,
+      height: 90,
+    }
   });
 
 export default createStyles;

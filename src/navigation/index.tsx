@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import {
+  AddMemberScreen,
   CollectionScreen,
   DashboardScreen,
   DatabaseScreen,
@@ -27,6 +28,7 @@ export type MainStackParamList = {
   NavigationScreen: undefined;
   ScannerScreen: undefined;
   DatabaseScreen: undefined;
+  AddMemberScreen: undefined;
 };
 
 const MainStack = createNativeStackNavigator<MainStackParamList>();
@@ -35,7 +37,7 @@ export default function Screens() {
   return (
     <NavigationContainer>
       <MainStack.Navigator
-        initialRouteName="DashboardScreen"
+        initialRouteName="AddMemberScreen"
         screenOptions={{ headerShown: false }}
       >
         <MainStack.Screen name="IntialScreen" component={IntialScreen} />
@@ -49,6 +51,7 @@ export default function Screens() {
         <MainStack.Screen name="NavigationScreen" component={NavigationScreen} />
         <MainStack.Screen name="ScannerScreen" component={ScannerScreen} />
         <MainStack.Screen name="DatabaseScreen" component={DatabaseScreen} />
+        <MainStack.Screen name="AddMemberScreen" component={AddMemberScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

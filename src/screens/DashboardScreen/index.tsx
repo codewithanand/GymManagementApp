@@ -14,7 +14,7 @@ const DashboardScreen: FC<IProps> = ({ navigation }) => {
   const styles = useMemo(() => createStyles(), []);
   return (
     <View style={styles.body}>
-      <TopNavigation firstIcon={MENU_ICON} navigation={navigation} />
+      <TopNavigation firstIcon={MENU_ICON} navigation={navigation} firstAction={() => navigation.navigate('NavigationScreen')} />
       <ScrollView style={styles.scrollView}>
         <View style={styles.dashboardCard}>
           <Text style={styles.heading}>Members Upcomming Expiry Report</Text>

@@ -44,6 +44,8 @@ const MembersScreen: FC<IProps> = ({ navigation }) => {
         firstIcon={MENU_ICON}
         secondIcon={ADD_PEOPLE_ICON}
         navigation={navigation}
+        firstAction={() => navigation.navigate('NavigationScreen')}
+        secondAction={() => navigation.navigate('AddMemberScreen')}
       />
       <View style={styles.searchBox}>
         <TextInput
@@ -89,6 +91,11 @@ const MembersScreen: FC<IProps> = ({ navigation }) => {
         />
       </View>
       <ScrollView style={styles.scrollView}>
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
         <MemberCard />
       </ScrollView>
       <BottomNavigation navigationLoc={navigation} />

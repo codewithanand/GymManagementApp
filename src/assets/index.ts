@@ -33,6 +33,7 @@ const FINGERPRINT_ICON = require('./icons/fingerprint_48.png');
 const BLOCK_ICON = require('./icons/block_48.png');
 const BACK_ICON = require('./icons/back_48.png');
 const DONE_ICON = require('./icons/done_48.png');
+const ADD_ICON = require('./icons/add_24.png');
 
 export{
     LOGO,
@@ -67,4 +68,5 @@ export{
     BLOCK_ICON,
     BACK_ICON,
     DONE_ICON,
+    ADD_ICON,
 }

@@ -68,13 +68,13 @@ const AddMemberScreen: FC<IProps> = ({ navigation }) => {
             status={checked === "first" ? "checked" : "unchecked"}
             onPress={() => setChecked("first")}
           />
-          <Text>General Training</Text>
+          <Text style={styles.text}>General Training</Text>
           <RadioButton
             value="second"
             status={checked === "second" ? "checked" : "unchecked"}
             onPress={() => setChecked("second")}
           />
-          <Text>Personal Training</Text>
+          <Text style={styles.text}>Personal Training</Text>
           <TextInput
             style={styles.input}
             onChangeText={() => {}}
@@ -96,7 +96,9 @@ const AddMemberScreen: FC<IProps> = ({ navigation }) => {
           />
         </View>
         <View style={styles.section}>
-          <Text>Plan Details:</Text>
+          <Text style={[styles.text, { marginBottom: 10, marginTop: 10 }]}>
+            Plan Details:
+          </Text>
           <Dropdown
             data={plans}
             labelField="label"
@@ -108,7 +110,7 @@ const AddMemberScreen: FC<IProps> = ({ navigation }) => {
             }}
             style={styles.dropdown}
           />
-          <Text>Plan Amount: {0}</Text>
+          <Text style={styles.text}>Plan Amount: {0}</Text>
           <TextInput
             style={styles.input}
             onChangeText={() => {}}
@@ -121,7 +123,9 @@ const AddMemberScreen: FC<IProps> = ({ navigation }) => {
             placeholder="Paid Amount"
             placeholderTextColor={Colors.GREY}
           />
-          <Text>Due Amount: {0}</Text>
+          <Text style={[styles.text, { marginBottom: 10 }]}>
+            Due Amount: {0}
+          </Text>
         </View>
         <View style={styles.section}>
           <RadioButton
@@ -129,13 +133,13 @@ const AddMemberScreen: FC<IProps> = ({ navigation }) => {
             status={gender === "male" ? "checked" : "unchecked"}
             onPress={() => setGender("male")}
           />
-          <Text>Male</Text>
+          <Text style={styles.text}>Male</Text>
           <RadioButton
             value="female"
             status={gender === "female" ? "checked" : "unchecked"}
             onPress={() => setGender("female")}
           />
-          <Text>Female</Text>
+          <Text style={styles.text}>Female</Text>
           <TextInput
             style={styles.input}
             onChangeText={() => {}}
